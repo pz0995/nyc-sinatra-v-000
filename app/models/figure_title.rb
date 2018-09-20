@@ -1,3 +1,4 @@
 class FigureTitle < ActiveRecord::Base
-  # add relationships here
+  belongs_to :figures
+  has_one :title
 end
