@@ -7,3 +7,4 @@ class CreateLandmarks < ActiveRecord::Migration
       t.string :year_completed
   end
 end
+end
