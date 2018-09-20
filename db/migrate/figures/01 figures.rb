@@ -5,3 +5,4 @@ class CreateLandmarks < ActiveRecord::Migration
       t.string :name
   end
 end
+end
