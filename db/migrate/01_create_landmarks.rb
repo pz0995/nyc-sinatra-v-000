@@ -36,5 +36,17 @@ class Landmark < ApplicationRecord
 end
 
 class Figure < ApplicationRecord
-  belongs_to :landmarks
+  has_many :landmarks
+  has_many :figure_titles
+  has_many :titles, through :figure_titles
+end
+
+class FigureTitle < ApplicationRecord
+  belongs_to :figures
+  has_one :title
+end
+
+class Title < ApplicationRecord
+  has_many :figure_titles
+  has_many :titles, through :figure_titles
 end
